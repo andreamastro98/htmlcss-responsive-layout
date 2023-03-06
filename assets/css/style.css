@@ -5,7 +5,7 @@
 }
 
 .container{
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -15,17 +15,49 @@
     flex-wrap: wrap;
 }
 
-header{
-    background-color: #0084FD;
-    padding: 15px 0px;
+.block{
+    display: block;
 }
 
 .padding-bottom{
     padding-bottom: 30px;
 }
 
+.italic{
+    font-style: italic;
+}
+
+.flex{
+    display: flex;
+}
+
+.wrap{
+    flex-wrap: wrap;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.justify-space-around{
+    justify-content: space-around;
+}
+
+.line-height{
+    line-height: 1.4em;
+}
+
 .margin-bottom{
     margin-bottom: 70px;
+}
+
+.margin-bottom-2{
+    margin-bottom: 40px;
+}
+
+header{
+    background-color: #0084FD;
+    padding: 15px 0px;
 }
 
 nav{
@@ -33,18 +65,44 @@ nav{
     align-items: center;
 }
 
-nav :first-child{
-    width: 50%;
+.nav-box-1{
+    width: 20%;
 }
 
-nav :last-child{
-    width: 50%;
-    text-align: end;
+.nav-box-2{
+    width: 80%;
+    text-align: end;    
+}
+
+.nav-box-2 i{
     color: white;
     font-size: 30px;
 }
 
-#demo-application{
+.ul-list{
+    display: none;
+}
+
+.ul-list li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+.ul-list li a{
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+#btn-white{
+    background-color: white;
+    color: black;
+    border-radius: 20px;
+    padding: 9px;
+}
+
+#demo-applications{
     display: flex;
     flex-wrap: wrap;
 }
@@ -70,6 +128,7 @@ nav :last-child{
 .card-blue span{
     color: #5a6e7f;
     line-height: 1.4em;
+    font-weight: bold;
 }
 
 .btn-blue{
@@ -109,6 +168,7 @@ nav :last-child{
 .no-bg-card{
     width: 100%;
     color: white;
+    margin-bottom: 40px;
 }
 
 .no-bg-card img{
@@ -125,11 +185,199 @@ nav :last-child{
 }
 
 .white-card{
+    width: 100%;
     background-color: white;
     padding: 25px 20px;
     border-radius: 50px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
 .white-card img{
     width: 100%;
 }
+
+.white-card h3{
+    margin: 20px 0;
+}
+
+.purple-btn{
+    background-color: #9792e4;
+    padding: 15px 18px;
+    display: inline-block;
+    border-radius: 50%;
+    margin-top: 35px;
+}
+
+.purple-btn a{
+    color: black;
+    text-decoration: none;
+}
+
+#testimonials{
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+#testimonials h2{
+    font-size: 38px;
+    color: #9792e4;
+    margin: 30px 0;
+}
+
+.testimonials-card-section{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.testimonials-card{
+    background-color: #9792e4;
+    border-radius: 50px;
+    padding: 25px 20px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.testimonials-card img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    position: relative;
+    margin: 0.5em;
+    padding: 0.5em 2em 0.5em 3em;
+    color: white;
+    line-height: 1.4em;
+}
+
+blockquote:before{
+    font-family: Georgia, serif;
+    color: white;
+    position: absolute;
+    font-size: 4em;
+    line-height: 1;
+    top: -5px;
+    left: 45px;
+    content: "\201C";
+}
+
+blockquote:after{
+    font-family: Georgia, serif;
+    position: absolute;
+    color: white;
+    float: right;
+    font-size: 4em;
+    line-height: 1;
+    right: 65px;
+    bottom: -0.5em;
+    content: "\201D";
+}
+
+#testimonials h3{
+    color: white;
+}
+
+
+#benefits{
+    background-color: #9792e4;
+}
+
+
+
+/*************************
+        MEDIA QUERY
+ *************************/
+
+/* tablet */
+ 
+ @media screen and (min-width: 480px){
+    #demo-applications{
+        justify-content: space-between;
+    }
+
+    .card-blue{
+        width: calc((100% / 3) - 1%);
+    }
+
+    #double-card{
+        width: calc((100% / 3) * 2 - 1%);
+    }
+
+    .testimonials-card{
+        display: flex;
+    }
+
+    .card-box-1{
+        width: 30%;
+    }
+
+    .card-box-2{
+        width: 70%;
+        padding-top: 50px;
+    }
+ }
+
+ /* Laptop */
+
+ @media screen and (min-width: 1140px){
+    .container{width: 60%;}
+
+    .ul-list{
+        display: inline-block;
+    }
+
+    .nav-box-2 i{
+        display: none;
+    }
+
+    #demo-applications{
+        justify-content: space-between;
+    }
+
+    .card-blue{
+        width: calc((100% / 3) - 1%);
+    }
+
+    #double-card{
+        width: calc((100% / 3) * 2 - 1%);
+    }
+
+    .no-bg-card{
+        width: 40%;
+    }
+
+    .white-card{
+        width: 30%;
+    }
+
+    .no-bg-card h2{
+        margin-top: 150px;
+    }
+
+    .testimonials-card{
+        display: flex;
+    }
+
+    .card-box-1{
+        width: 30%;
+    }
+
+    .card-box-2{
+        width: 70%;
+        padding-top: 50px;
+    }
+
+    .width-100{
+        width: 50%;
+    }
+
+    .ta-start{
+        text-align: start;
+    }
+ }
