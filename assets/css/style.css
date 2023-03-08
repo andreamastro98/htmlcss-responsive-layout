@@ -420,6 +420,7 @@ blockquote:after{
 #quotes-img-about-us{
     position: relative;
     display: inline-block;
+    margin-bottom: 1rem;
 }
 
 #quotes-img-about-us i{
