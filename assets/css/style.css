@@ -419,12 +419,13 @@ blockquote:after{
 
 #quotes-img-about-us{
     position: relative;
+    display: inline-block;
 }
 
 #quotes-img-about-us i{
     position: absolute;
     top: 0;
-    right: 4rem;
+    right: 0.3rem;
     font-size: 4rem;
     color: #9792E4;
 }
